@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Função para gerar número aleatório
+
 int aleatorio(int min, int max)
 {
     return min + rand() % (max - min + 1);
@@ -13,10 +13,9 @@ int main()
     int numero_secreto;
     int tentativa;
 
-    // Inicializa a aleatoriedade
+ 
     srand(time(NULL));
 
-    // Gera número entre 1 e 100
     numero_secreto = aleatorio(1, 100);
 
     printf("=== JOGO DE ADIVINHACAO ===\n");
